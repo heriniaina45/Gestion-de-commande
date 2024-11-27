@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM YOUTUBE </title>
+    <link rel="stylesheet" href="{% static 'etudiant/css/bootstrap.css' %}">
+
+    <style>
+        #logo{
+
+        }
+        body{
+            background-color: #ebeff5;
+        }
+    </style>
+</head>
+<body>
+    {% include 'base/nav.html'%}
+
+    {% block content %}
+    {% endblock %}
+
+    <hr>
+    <h1>Footer</h1>
+
+
+    <script src="{% static 'etudiant/js/jquery.js'%}"></script>
+    <script src="{% static 'etudiant/js/bootstrap.js'%}"></script>
+    <script src="{% static 'etudiant/js/popper.js'%}"></script>
+</body>
+</html>
